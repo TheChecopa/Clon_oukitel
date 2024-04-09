@@ -1,0 +1,173 @@
+
+.gallery-container {
+    width: 100%; /* Establece el ancho del contenedor de miniaturas */
+    max-width: 800px; /* Establece el ancho máximo */
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-gallery {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px; /* Espacio entre imágenes */
+    overflow-x: auto; /* Deshabilita el desplazamiento horizontal automático */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Habilita scroll suave en iOS */
+    position: relative; /* Añadido */
+}
+
+.image-gallery img {
+    max-width: 150px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.prev, .next {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    z-index: 999;
+    position: absolute; /* Cambiado */
+    top: 50%; /* Cambiado */
+    transform: translateY(-50%); /* Cambiado */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.imagen-principal {
+    margin-bottom: 20px;
+    width: 100%; /* La imagen principal ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  
+.imagen-principal img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+.miniaturas-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra las miniaturas horizontalmente */
+    align-items: center;
+  }
+  
+  .miniaturas {
+    display: flex;
+    overflow-x: auto; /* Permite desplazar horizontalmente las miniaturas */
+  }
+  
+  .miniaturas img {
+    width: 100px; /* Tamaño de las miniaturas */
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+
+
+
+  /* Create a grid to the page items */
+.custom-grid {
+    background: lightcoral;
+    /* border: 10px solid black; */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px;
+    min-height: 100vh;
+  
+  }
+  
+  .custom-grid-div:first-child {
+    background: lightskyblue;
+      /* border: 2px solid green ; */
+      grid-column-start: 1;
+      grid-row-end: span 2;
+  }
+  
+  .custom-grid-div:nth-child(2) {
+      background: lightgreen;
+      /* border: 2px solid green;  */
+      padding: 10px;
+      grid-column-start: 2;
+      grid-row-start: span 3;
+  }
+  
+
+
+
+  
+
+/* Create the features tab to add specifications about the products. This is used in the items page */
+.accordion {
+    width: 100%;
+}
+
+.accordion-label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 3px solid #ccc; /* Línea inferior */
+    flex-wrap: wrap; /* Envuelve los elementos si no caben en una sola línea */
+}
+
+.accordion-label:hover {
+    background-color: transparent; /* Eliminamos el fondo gris */
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+}
+
+.accordion-input {
+  display: none; /* Oculta el checkbox */
+}
+
+#tab1:checked ~ .accordion-label[for="tab1"] + .accordion-content,
+#tab2:checked ~ .accordion-label[for="tab2"] + .accordion-content,
+#tab3:checked ~ .accordion-label[for="tab3"] + .accordion-content {
+    display: block;
+}
+
+.custom-tabs-index-items {
+  font-family: "Arial";
+  font-size: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

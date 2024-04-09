@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Top Pages -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">OUKITEL</a>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="prueba.html">Pruebas</a></li>
+                      <li class="nav-item"><a class="nav-link" href="all_products.html">products</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+        
+        <section class="custom-grid">
+          <div class="custom-grid-div"> <!--First div for the images-->
+            <div class="imagen-principal" id="imagenPrincipal">
+              <img src="assets/images/index/imagenes/CN505/1.jpg" alt="Imagen Principal">
+            </div>
+            <div class="miniaturas-container gallery-container">
+              <div class="miniaturas image-gallery">
+                <img src="assets/images/index/imagenes/CN505/11111.148.jpg" alt="Miniatura 1" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.148.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.149.jpg" alt="Miniatura 2" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.149.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.150.jpg" alt="Miniatura 3" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.150.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.151.jpg" alt="Miniatura 4" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.151.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.152.jpg" alt="Miniatura 5" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.152.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.154.jpg" alt="Miniatura 3" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.154.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.1542.jpg" alt="Miniatura 4" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.1542.jpg')">
+                <img src="assets/images/index/imagenes/CN505/11111.152.jpg" alt="Miniatura 5" onclick="mostrarImagen('assets/images/index/imagenes/CN505/11111.152.jpg')">
+              </div>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+          </div><!--Second div for the specifications -->
+            <div class="custom-grid-div">
+              <div>
+                  <h2>Oukitel CN-505 central de carga de energía</h2><br>
+                  <div style="font-size:20px; font-weight:bold; "><del><span>$12,482.00</span></del> <span class="custom-color-index-price">$9,474.40</span>
+                      <a href="#" class="text-very-small letter-spacing-2px"><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i></a><br>
+                  </div>
+                  <div style="color:red; font-size:18px;">Te ahorraste el 25% (se dejara el descuento¿?)(<span>$100.00</span>)</div>
+              </div><br>
+
+              <div class="custom-text">
+                <p>ESPECIFICACIONES ELÉCTRICAS</p>
+                <li>POTENCIA: 614,4 Wh (12,8V)</li>
+                <li>CAPACIDAD: 192000 mAh</li>
+                <li>BATERÍA: LiFePO4</li>
+                <li>CICLO DE VIDA: +3500</li>
+                <li>INVERSOR: Onda sinusoidal pura</li>
+            </div><br><br>
+            
+            <div class="accordion">
+                <input type="checkbox" id="tab1" class="accordion-input">
+                <label for="tab1" class="accordion-label custom-tabs-index-items" for="tab1">CARGA<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>ADAPTADOR DE CA: 500W</li>
+                  <li>CARGA SUPER RÁPIDA: /</li>
+                  <li>TIEMPO DE CARGA DE CA: 7-8 horas (12V-24V/6A 85W)</li>
+                  <li>CONECTOR DE PANEL SOLAR: 12-24V/85W MÁX.</li>
+                  <li>CARGA SOLAR: 7-8 horas</li>
+                  <li>CARGA DE AUTOMÓVIL: 12V10A</li>
+                </div>
+                
+                <input type="checkbox" id="tab2" class="accordion-input">
+                <label for="tab2" class="accordion-label custom-tabs-index-items" for="tab2">CARGA Y DESCARGA AL MISMO TIEMPO<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>SI</li>
+                </div>
+                
+                <input type="checkbox" id="tab3" class="accordion-input">
+                <label for="tab3" class="accordion-label custom-tabs-index-items" for="tab3">SALIDA DE CA<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>POTENCIA NOMINAL: 500W</li>
+                  <li>POTENCIA NOMINAL DE UPS: /</li>
+                  <li>POTENCIA DE SOBRETENSIÓN: 1000W</li>
+                  <li>VOLTAJE: 100V-120V</li>
+                  <li>FRECUENCIA NOMINAL: 60Hz/50Hz</li>
+                  <li>SOBRECARGA: 520W≤carga＜560W@1s</li>
+                  <li>100W≤carga @0.5s</li>
+                  <li>EFICIENCIA DEL INVERSOR: η=85%</li>
+                  <li>PROFUNDIDAD DE DESCARGA: DOD=90%</li>
+                  <li>SALIDA DE CA: 2 puertos *100Vac ±5% Tomacorriente</li>
+                </div>
+
+                <input type="checkbox" id="tab4" class="accordion-input">
+                <label for="tab4" class="accordion-label custom-tabs-index-items" for="tab4">SALIDA DE CC<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>USB-A: 2* (5V/2.4A)</li>
+                  <li>USB-A, QC3.0: 2* (5V/3A; 9V/2A; 12V/1.5A)</li>
+                  <li>TIPO-C: 1*PD60W (5V3A 9V3A 12V3A 15V3A 20V3A)</li>
+                  <li>DC5521: 2* toma 12V4A</li>
+                  <li>TOMA DE ENCENDEDOR DE CIGARROS: 1* toma 12V/10A</li>
+                  <li>ILUMINACIÓN LED: Potencia 4W, tono cálido, lámpara única copa para lámpara</li>
+                </div>
+
+                <input type="checkbox" id="tab5" class="accordion-input">
+                <label for="tab5" class="accordion-label custom-tabs-index-items" for="tab5">CONDICIONES DE FUNCIONAMIENTO<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>TIEMPO DE ARRANQUE: /</li>
+                  <li>SISTEMA DE GESTIÓN: Gestión BMS</li>
+                  <li>TEMPERATURA DE CARGA: 0-40 ℃ / 32-104℉</li>
+                  <li>TEMPERATURA DE DESCARGA: -10-40 ℃ / -4-104℉</li>
+                  <li>HUMEDAD: 5%-95%</li>
+                  <li>ESTRATEGIA DE ENFRIAMIENTO: Ventilador</li>
+                </div>
+
+                <input type="checkbox" id="tab6" class="accordion-input">
+                <label for="tab6" class="accordion-label custom-tabs-index-items" for="tab6">ESPECIFICACIONES MECÁNICAS<span class="arrow">&#9660;</span></label>
+                <div class="accordion-content">
+                  <li>PROTECCIÓN: Rescate y cortocircuito, Sobrecorriente, Sobretensión, Baja tensión, Sobrecarga, Sobrecalentamiento, Sobrecarga</li>
+                  <li>MATERIAL DE LA CARCASA: ABS+PC+Aleación de aluminio</li>
+                  <li>CLASIFICACIÓN CONTRA INCENDIOS: V0</li>
+                  <li>DIMENSIONES (MM): L317W151H181</li>
+                  <li>PAQUETE: CN5051, 19V4.75A(90W)1, cable MC441, cable de carga1, manual*1</li>
+                  <li>PESO: P.N. : 7,6 kg P.B. : 9,3 kg</li>
+                  <li>CERTIFICADO: CE, FCC, PSE, UN38.3, EMC, LVD, RoHS, MSDS, UL2743</li>
+                  <li>GARANTÍA: 1-2 años</li>
+                </div>
+
+                
+              </div>
+            </div>
+          </section>
+
+        <div class="container-fluid full-screen-images">
+            <img src="assets/images/items/Items_0_1/1.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/2.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/3.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/4.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/5.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/6.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/7.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/8.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/9.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/10.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/11.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/111.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/12.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/13.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/14.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/15.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/16.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/17.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/18.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/19.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/20.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/21.png" class="img-fluid" alt="...">
+            <img src="assets/images/items/Items_0_1/22.png" class="img-fluid" alt="...">
+        </div>
+
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                  <div class="col-lg-4 my-3 my-lg-0">
+                      <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <div class="col-lg-4 text-lg-end">
+                      <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                      <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                  </div>
+              </div>
+          </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

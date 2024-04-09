@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imágenes con flechas</title>
+    <link rel="stylesheet" href="css/pruebaindex.css">
+</head>
+<body>
+
+    <section class="custom-grid">
+        <div class="custom-grid-div">
+          <div class="imagen-principal " id="imagenPrincipal">
+            <img src="assets/images/items/1.webp" alt="Imagen Principal">
+          </div>
+          <div class="miniaturas-container gallery-container">
+            <div class="miniaturas image-gallery">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                <img src="assets/images/items/3.webp" alt="Miniatura 2" onclick="mostrarImagen('assets/images/items/3.webp')">
+                <img src="assets/images/items/4.webp" alt="Miniatura 3" onclick="mostrarImagen('assets/images/items/4.webp')">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                <img src="assets/images/items/3.webp" alt="Miniatura 2" onclick="mostrarImagen('assets/images/items/3.webp')">
+                <img src="assets/images/items/4.webp" alt="Miniatura 3" onclick="mostrarImagen('assets/images/items/4.webp')">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                <img src="assets/images/items/3.webp" alt="Miniatura 2" onclick="mostrarImagen('assets/images/items/3.webp')">
+                <img src="assets/images/items/4.webp" alt="Miniatura 3" onclick="mostrarImagen('assets/images/items/4.webp')">
+                <img src="assets/images/items/2.webp" alt="Miniatura 1" onclick="mostrarImagen('assets/images/items/2.webp')">
+                
+            </div>
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+        </div>
+
+       
+        </div>
+
+        <div class="custom-grid-div">
+            <div>
+                <h2>Oukitel CN-505 central de carga de energía</h2><br>
+                <div style="font-size:20px; font-weight:bold; "><del><span>$12,482.00</span></del> <span class="custom-color-index-price">$9,474.40</span>
+                    <a href="#" class="text-very-small letter-spacing-2px"><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i><i class="fa-solid fa-star text-orange"></i></a><br>
+                </div>
+                <div style="color:red; font-size:18px;">You save 25% (ajustar)(<span>$100.00</span>)</div>
+        </div><br>
+
+        <div class="custom-text">
+                <li>RT7 4G In stock, Order Now, Ships Fast</li>
+                <li>32000mAh Massive Battery</li>
+                <li>180 Days Standby</li>
+                <li>24GB RAM(12+12*)+256GB ROM</li>
+                <li>MediaTek Dimensity 720 5G</li>
+                <li>MIL-STD-810H  IP68 IP69K</li>
+        </div><br><br><br>
+          
+          <div class="accordion">
+              <details class="accordion-label">
+                  <summary class="summary">Basic information</summary>
+                      <li>Model: WP33 Pro</li>
+                      <li>Battery: 22000mAh / 18W fast charging</li>
+                      <li>Operating system: Android 13</li>
+                      <li>Charger interface: Type-C port / 33W Charger</li>
+                      <li>CPU: MediaTek Dimensity 6100+, 6nm process</li>
+                      <li>GPU: Mali-G57 MP2</li>
+                      <li>Battery certification UN38.3 / MSDS / Air Freight / Maritime Transport</li>
+                      <li>Hardware certification CE(IEC62133 / ROHS / SAR) / FCC, IP68, IP69K, MIL-STD-810G</li>
+                      <li>Software certification GMS</li>
+                      <li>Height: 175.4 mm Width: 84 mm Thickness: 27.2 mm Weight: 577.5g</li>
+                      <li>The maximum electromagnetic radiation absorption ratio (SAR) is 2.0W/kg</li>
+              </details>
+              <details class="accordion-label">
+                  <summary class="summary">Basic information</summary>
+                      <li>Model: WP33 Pro</li>
+                      <li>Battery: 22000mAh / 18W fast charging</li>
+                      <li>Operating system: Android 13</li>
+                      <li>Charger interface: Type-C port / 33W Charger</li>
+                      <li>CPU: MediaTek Dimensity 6100+, 6nm process</li>
+                      <li>GPU: Mali-G57 MP2</li>
+                      <li>Battery certification UN38.3 / MSDS / Air Freight / Maritime Transport</li>
+                      <li>Hardware certification CE(IEC62133 / ROHS / SAR) / FCC, IP68, IP69K, MIL-STD-810G</li>
+                      <li>Software certification GMS</li>
+                      <li>Height: 175.4 mm Width: 84 mm Thickness: 27.2 mm Weight: 577.5g</li>
+                      <li>The maximum electromagnetic radiation absorption ratio (SAR) is 2.0W/kg</li>
+              </details>
+              
+              <input type="checkbox" id="tab1" class="accordion-input">
+              <label for="tab1" class="accordion-label custom-tabs-index-items" for="tab1">Basic information<span class="arrow">&#9660;</span></label>
+              <div class="accordion-content">
+                <li>Model: WP33 Pro</li>
+                <li>Battery: 22000mAh / 18W fast charging</li>
+                <li>Operating system: Android 13</li>
+                <li>Charger interface: Type-C port / 33W Charger</li>
+                <li>CPU: MediaTek Dimensity 6100+, 6nm process</li>
+                <li>GPU: Mali-G57 MP2</li>
+                <li>Battery certification UN38.3 / MSDS / Air Freight / Maritime Transport</li>
+                <li>Hardware certification CE(IEC62133 / ROHS / SAR) / FCC, IP68, IP69K, MIL-STD-810G</li>
+                <li>Software certification GMS</li>
+                <li>Height: 175.4 mm Width: 84 mm Thickness: 27.2 mm Weight: 577.5g</li>
+                <li>The maximum electromagnetic radiation absorption ratio (SAR) is 2.0W/kg</li>
+                
+              </div>
+              
+              <input type="checkbox" id="tab2" class="accordion-input">
+              <label for="tab2" class="accordion-label custom-tabs-index-items" for="tab1">Features<span class="arrow">&#9660;</span></label>
+              <div class="accordion-content">
+                <li>GPU: Mali-G57 MP2</li>
+                <li>Battery certification UN38.3 / MSDS / Air Freight / Maritime Transport</li>
+                <li>Hardware certification CE(IEC62133 / ROHS / SAR) / FCC, IP68, IP69K, MIL-STD-810G</li>
+                <li>Software certification GMS</li>
+                <li>Height: 175.4 mm Width: 84 mm Thickness: 27.2 mm Weight: 577.5g</li>
+                <li>The maximum electromagnetic radiation absorption ratio (SAR) is 2.0W/kg</li>
+              </div>
+              
+              <input type="checkbox" id="tab3" class="accordion-input">
+              <label for="tab3" class="accordion-label custom-tabs-index-items" for="tab1">Frecuency<span class="arrow">&#9660;</span></label>
+              <div class="accordion-content">
+                <li>CPU: MediaTek Dimensity 6100+, 6nm process</li>
+                <li>GPU: Mali-G57 MP2</li>
+                <li>Battery certification UN38.3 / MSDS / Air Freight / Maritime Transport</li>
+                <li>Hardware certification CE(IEC62133 / ROHS / SAR) / FCC, IP68, IP69K, MIL-STD-810G</li>
+                <li>Software certification GMS</li>
+            </div>
+          </div>
+        </div>
+        
+  
+    </section>
+
+   
+        
+    
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

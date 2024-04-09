@@ -1,0 +1,389 @@
+.custom-grid {
+  background: lightcoral;
+  border: 10px solid black;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px;
+  min-height: 100vh;
+  
+
+}
+
+.custom-grid-div:nth-child(1) {
+    background: rgb(32, 178, 170);
+    border: 2px solid green ;
+    grid-column-start: 1;
+    grid-row-end: span 2;
+  }
+
+.custom-grid-div:nth-child(2) {
+    background: lightgreen;
+    border: 2px solid green ;
+    grid-column-start: 2;
+    grid-row-start: span 3;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+/* 
+.custom-grid-two {
+    background: lightgoldenrodyellow;
+    border: 10px solid purple;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    min-height: 30vh;
+    gap: 10px;
+  } */
+
+
+
+
+
+  
+.grid-items-1 {
+  background: lightcoral;
+  border: 10px solid black; 
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Columnas responsivas */
+  grid-template-rows: auto; /* Altura de las filas ajustada automáticamente */
+  min-height: 60vh;
+  max-width: 100%; /* Ancho máximo igual al 100% del contenedor padre */
+  gap: 20px;
+  padding: 20px;
+}
+  
+.custom-grid-div-1 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen automáticamente para mantener la proporción */
+    max-width: 500px; /* Tamaño fijo para las imágenes */
+    max-height: 300px; /* Tamaño fijo para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+  }
+
+.custom-img {
+    height: auto;
+    width: 100%;
+}
+
+
+  
+.accordion {
+    width: 100%;
+  }
+  
+.accordion-input {
+    display: none;
+  }
+  
+.accordion-label {
+    cursor: pointer;
+    display: block;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-label:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  #tab1:checked ~ .accordion-label[for="tab1"] + .accordion-content,
+  #tab2:checked ~ .accordion-label[for="tab2"] + .accordion-content,
+  #tab3:checked ~ .accordion-label[for="tab3"] + .accordion-content {
+    display: block;
+  }
+  
+
+
+#selected-image {
+    margin-top: 20px;
+  }
+  
+#selected-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+
+/* Estilos generales del botón */
+.button-custom {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos de hover */
+.button-custom:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+
+/* Estilos del header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: top 0.3s;
+}
+
+.header.hidden {
+    top: -100px; /* Oculta el header al moverlo fuera de la vista */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+
+
+
+
+.custom-text {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+
+
+.contenedor-imagen {
+  position: relative;
+}
+
+.imagen-normal {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen-hover {
+  display: none; /* Oculta la imagen hover por defecto */
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor-imagen:hover .imagen-normal {
+  display: none; /* Oculta la imagen normal cuando pasas el cursor sobre el contenedor */
+  
+}
+
+.contenedor-imagen:hover .imagen-hover {
+  display: block; /* Muestra la imagen hover cuando pasas el cursor sobre el contenedor */
+  
+}
+
+.custom-links-text {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-text {
+  font-family: "Arial";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.custom-text-index-items {
+  font-family: "Arial";
+  font-size: 15px;
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el texto que no cabe en el grid */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto no cabe */
+}
+
+
+.custom-text-index-items:hover {
+    color: red; 
+}
+
+.very-small {
+  text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.custom-color-index-price {
+  color: red;
+}
+
+
+
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-principal {
+  margin-bottom: 20px;
+}
+
+.miniaturas img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-principal {
+  margin-bottom: 20px;
+  width: 100%; /* La imagen principal ocupará todo el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.miniaturas-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centra las miniaturas horizontalmente */
+  align-items: center;
+}
+
+.miniaturas {
+  display: flex;
+  overflow-x: auto; /* Permite desplazar horizontalmente las miniaturas */
+}
+
+.miniaturas img {
+  width: 100px; /* Tamaño de las miniaturas */
+  height: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.flecha-izquierda {
+  left: 0;
+}
+
+.flecha-derecha {
+  right: 0;
+}
+
+.imagen-principal img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
